@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "check": "npx rimraf node_modules package-lock.json && npm install && npm run build",
     "safe-check": "npm run check && npm run preview",
-    "build": "npx vite build",
+    "build": "node init && npx vite build",
     "preview": "vite preview"
   },
   "dependencies": {
